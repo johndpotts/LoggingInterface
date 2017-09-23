@@ -10,6 +10,10 @@ namespace LoggingInterface
     {
         static void Main(string[] args)
         {
+            ILogger log = ILoggerFactory.GetLogger();
+
+            log.WriteToLog("Hello World!");
+            Console.ReadLine();
         }
     }
 }
